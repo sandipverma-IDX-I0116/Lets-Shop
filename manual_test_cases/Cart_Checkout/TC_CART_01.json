@@ -1,0 +1,29 @@
+{
+    "TC_CART_01": {
+        "test_case_summary": "Verify that added products are visible in the Cart",
+        "prerequisites": "1. User should have added 'iphone 13 pro' to cart",
+        "steps": [
+            {
+                "test_step": "1. Click on 'Cart' button in the header",
+                "expected_result": "User should be redirected to the Cart page",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "2. Validate the product list",
+                "expected_result": "'iphone 13 pro' should be visible in the cart list",
+                "test_data": {
+                    "value": "iphone 13 pro"
+                }
+            },
+            {
+                "test_step": "3. Validate 'Checkout' button visibility",
+                "expected_result": "'Checkout' button should be visible",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

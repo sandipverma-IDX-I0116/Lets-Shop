@@ -1,0 +1,29 @@
+{
+    "TC_LOGIN_03": {
+        "test_case_summary": "Verify that user cannot login with a non-existent email address",
+        "prerequisites": "1. Browser open\n2. User on Login page",
+        "steps": [
+            {
+                "test_step": "1. Enter Non-existent Email",
+                "expected_result": "Email entered",
+                "test_data": {
+                    "value": "unregistered_user@example.com"
+                }
+            },
+            {
+                "test_step": "2. Enter Valid Password Format",
+                "expected_result": "Password entered",
+                "test_data": {
+                    "value": "Password@123"
+                }
+            },
+            {
+                "test_step": "3. Click Login",
+                "expected_result": "Error message 'Incorrect email or password.' should be displayed.",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

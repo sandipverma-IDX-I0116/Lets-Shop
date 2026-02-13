@@ -1,0 +1,22 @@
+{
+    "TC_REG_04": {
+        "test_case_summary": "Verify that user cannot register with empty mandatory fields",
+        "prerequisites": "1. Browser open\n2. User on Registration page",
+        "steps": [
+            {
+                "test_step": "1. Leave all fields empty",
+                "expected_result": "Fields are empty",
+                "test_data": {
+                    "value": "empty"
+                }
+            },
+            {
+                "test_step": "2. Click Register",
+                "expected_result": "Validation error messages should be displayed for all mandatory fields (e.g., '*First Name is required').",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

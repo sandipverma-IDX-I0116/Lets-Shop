@@ -1,0 +1,36 @@
+{
+    "TC_LOGIN_01": {
+        "test_case_summary": "Verify that user can successfully login with valid credentials",
+        "prerequisites": "1. Browser should be open\n2. User should differ registered",
+        "steps": [
+            {
+                "test_step": "1. Navigate to the Login page",
+                "expected_result": "Login page should be displayed",
+                "test_data": {
+                    "value": "https://rahulshettyacademy.com/client/#/auth/login"
+                }
+            },
+            {
+                "test_step": "2. Enter Valid Email",
+                "expected_result": "Email should be entered",
+                "test_data": {
+                    "value": "valid_user@example.com"
+                }
+            },
+            {
+                "test_step": "3. Enter Valid Password",
+                "expected_result": "Password should be entered",
+                "test_data": {
+                    "value": "Password@123"
+                }
+            },
+            {
+                "test_step": "4. Click on 'Login' button",
+                "expected_result": "User should be logged in and redirected to the Dashboard page. 'Login Successfully' toast may appear.",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

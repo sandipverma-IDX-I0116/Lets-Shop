@@ -1,0 +1,50 @@
+{
+    "TC_E2E_01": {
+        "test_case_summary": "Verify End-to-End Shopping Journey (Register -> Login -> Shop -> Checkout -> Order)",
+        "prerequisites": "1. Browser open",
+        "steps": [
+            {
+                "test_step": "1. Navigate to https://rahulshettyacademy.com/client/",
+                "expected_result": "Login Page displayed",
+                "test_data": {
+                    "value": "URL"
+                }
+            },
+            {
+                "test_step": "2. Register a new user with unique email",
+                "expected_result": "Registration successful",
+                "test_data": {
+                    "value": "New User Data"
+                }
+            },
+            {
+                "test_step": "3. Login with new credentials",
+                "expected_result": "Dashboard displayed",
+                "test_data": {
+                    "value": "Credentials"
+                }
+            },
+            {
+                "test_step": "4. Search for 'iphone 13 pro' and Add to Cart",
+                "expected_result": "Added to cart toast displayed",
+                "test_data": {
+                    "value": "iphone 13 pro"
+                }
+            },
+            {
+                "test_step": "5. Go to Cart and Click Checkout",
+                "expected_result": "Checkout page displayed",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "6. Select Country 'India' and Place Order",
+                "expected_result": "Order Confirmation displayed with Order ID",
+                "test_data": {
+                    "value": "India"
+                }
+            }
+        ]
+    }
+}

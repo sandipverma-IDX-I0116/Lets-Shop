@@ -1,0 +1,22 @@
+{
+    "TC_CHECKOUT_02": {
+        "test_case_summary": "Verify that user cannot place order without selecting a country",
+        "prerequisites": "1. User on Checkout Page",
+        "steps": [
+            {
+                "test_step": "1. Leave Country field empty",
+                "expected_result": "Field empty",
+                "test_data": {
+                    "value": "empty"
+                }
+            },
+            {
+                "test_step": "2. Click Place Order",
+                "expected_result": "Order should not be placed. Error message or validation prompt 'Please Select Country' should appear.",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

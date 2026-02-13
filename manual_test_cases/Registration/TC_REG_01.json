@@ -1,0 +1,99 @@
+{
+    "TC_REG_01": {
+        "test_case_summary": "Verify that a new user can successfully register with valid details",
+        "prerequisites": "1. Browser should be open\n2. User should be on the Login page",
+        "steps": [
+            {
+                "test_step": "1. Navigate to the application URL: https://rahulshettyacademy.com/client/",
+                "expected_result": "Login page should be displayed",
+                "test_data": {
+                    "value": "https://rahulshettyacademy.com/client/"
+                }
+            },
+            {
+                "test_step": "2. Click on 'Register here' link",
+                "expected_result": "User should be redirected to the Registration page",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "3. Enter First Name",
+                "expected_result": "First Name should be entered",
+                "test_data": {
+                    "value": "Test"
+                }
+            },
+            {
+                "test_step": "4. Enter Last Name",
+                "expected_result": "Last Name should be entered",
+                "test_data": {
+                    "value": "User"
+                }
+            },
+            {
+                "test_step": "5. Enter Email Address",
+                "expected_result": "Email Address should be entered",
+                "test_data": {
+                    "value": "unique_email@example.com"
+                }
+            },
+            {
+                "test_step": "6. Enter Phone Number",
+                "expected_result": "Phone Number should be entered",
+                "test_data": {
+                    "value": "1234567890"
+                }
+            },
+            {
+                "test_step": "7. Select Occupation from dropdown",
+                "expected_result": "Occupation should be selected",
+                "test_data": {
+                    "value": "Engineer"
+                }
+            },
+            {
+                "test_step": "8. Select Gender (Male/Female)",
+                "expected_result": "Gender radio button should be selected",
+                "test_data": {
+                    "value": "Male"
+                }
+            },
+            {
+                "test_step": "9. Enter Password",
+                "expected_result": "Password should be entered (masked)",
+                "test_data": {
+                    "value": "Password@123"
+                }
+            },
+            {
+                "test_step": "10. Enter Confirm Password",
+                "expected_result": "Confirm Password should be entered (masked)",
+                "test_data": {
+                    "value": "Password@123"
+                }
+            },
+            {
+                "test_step": "11. Check 'I am 18 year or Older' checkbox",
+                "expected_result": "Checkbox should be checked",
+                "test_data": {
+                    "value": "true"
+                }
+            },
+            {
+                "test_step": "12. Click on 'Register' button",
+                "expected_result": "'Account Created Successfully' message should be displayed",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "13. Click on 'Login' button in the success message",
+                "expected_result": "User should be redirected to the Login page",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

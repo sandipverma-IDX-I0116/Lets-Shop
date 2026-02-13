@@ -1,0 +1,29 @@
+{
+    "TC_DASH_01": {
+        "test_case_summary": "Verify that products are displayed correctly on the Dashboard",
+        "prerequisites": "1. User should be logged in",
+        "steps": [
+            {
+                "test_step": "1. Navigate to the Dashboard",
+                "expected_result": "Dashboard page should be visible",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "2. Observe the product section",
+                "expected_result": "List of products should be displayed",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "3. Validate product details",
+                "expected_result": "Each product should have an Image, Name, Price, 'View' button, and 'Add To Cart' button",
+                "test_data": {
+                    "value": "NA"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "TC_CHECKOUT_01": {
+        "test_case_summary": "Verify that user can successfully place an order",
+        "prerequisites": "1. User should be on Cart page with items",
+        "steps": [
+            {
+                "test_step": "1. Click on 'Checkout' button on Cart page",
+                "expected_result": "User should be redirected to the Order Payment/Checkout page",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "2. Verify Shipping Information",
+                "expected_result": "Email address should be auto-populated and correct",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "3. Enter 'Ind' in 'Select Country' field",
+                "expected_result": "Dropdown with country suggestions should appear",
+                "test_data": {
+                    "value": "Ind"
+                }
+            },
+            {
+                "test_step": "4. Select 'India' from the dropdown",
+                "expected_result": "'India' should be selected",
+                "test_data": {
+                    "value": "India"
+                }
+            },
+            {
+                "test_step": "5. Click on 'Place Order' button",
+                "expected_result": "Order should be placed successfully. User should be redirected to Order Confirmation page.",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "6. Validate Success Message",
+                "expected_result": "'Thankyou for the order.' message should be displayed.",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "7. Validate Order ID",
+                "expected_result": "Order ID should be generated and displayed",
+                "test_data": {
+                    "value": "NA"
+                }
+            }
+        ]
+    }
+}

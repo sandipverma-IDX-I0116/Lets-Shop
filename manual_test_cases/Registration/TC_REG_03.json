@@ -1,0 +1,43 @@
+{
+    "TC_REG_03": {
+        "test_case_summary": "Verify that user cannot register when Password and Confirm Password do not match",
+        "prerequisites": "1. Browser open\n2. User on Registration page",
+        "steps": [
+            {
+                "test_step": "1. Fill Personal Information (Name, Email, Phone, Occupation, Gender)",
+                "expected_result": "Fields filled",
+                "test_data": {
+                    "value": "Valid Data"
+                }
+            },
+            {
+                "test_step": "2. Enter Password",
+                "expected_result": "Password entered",
+                "test_data": {
+                    "value": "Password@123"
+                }
+            },
+            {
+                "test_step": "3. Enter Different Confirm Password",
+                "expected_result": "Confirm Password entered",
+                "test_data": {
+                    "value": "Password@456"
+                }
+            },
+            {
+                "test_step": "4. Check Age Checkbox",
+                "expected_result": "Checked",
+                "test_data": {
+                    "value": "true"
+                }
+            },
+            {
+                "test_step": "5. Click Register",
+                "expected_result": "Error message indicating password mismatch should be displayed (e.g. 'Password and Confirm Password must match'). Registration should fail.",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

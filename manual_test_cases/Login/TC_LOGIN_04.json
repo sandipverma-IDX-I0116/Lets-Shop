@@ -1,0 +1,22 @@
+{
+    "TC_LOGIN_04": {
+        "test_case_summary": "Verify that user cannot login with empty fields",
+        "prerequisites": "1. Browser open\n2. User on Login page",
+        "steps": [
+            {
+                "test_step": "1. Leave Email and Password empty",
+                "expected_result": "Fields empty",
+                "test_data": {
+                    "value": "empty"
+                }
+            },
+            {
+                "test_step": "2. Click Login",
+                "expected_result": "Validation errors should be displayed (e.g., '*Email is required', '*Password is required').",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

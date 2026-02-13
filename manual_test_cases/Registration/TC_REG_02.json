@@ -1,0 +1,36 @@
+{
+    "TC_REG_02": {
+        "test_case_summary": "Verify that user cannot register with an already existing email address",
+        "prerequisites": "1. Browser should be open\n2. User with email 'existing@example.com' should already exist",
+        "steps": [
+            {
+                "test_step": "1. Navigate to the Registration page",
+                "expected_result": "Registration page should be displayed",
+                "test_data": {
+                    "value": "https://rahulshettyacademy.com/client/#/auth/register"
+                }
+            },
+            {
+                "test_step": "2. Fill all mandatory fields with valid data",
+                "expected_result": "All fields should be filled",
+                "test_data": {
+                    "value": "Valid Data"
+                }
+            },
+            {
+                "test_step": "3. Enter an existing Email Address",
+                "expected_result": "Email Address should be entered",
+                "test_data": {
+                    "value": "existing@example.com"
+                }
+            },
+            {
+                "test_step": "4. Click on 'Register' button",
+                "expected_result": "Error message 'User already exists with this Email Id!' should be displayed",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

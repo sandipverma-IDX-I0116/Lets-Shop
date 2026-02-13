@@ -1,0 +1,8 @@
+[     246ms] [WARNING] [ngx-spinner]: Property "type" is missed. Please, provide animation type to <ngx-spinner> component
+        and ensure css is added to angular.json file @ https://rahulshettyacademy.com/client/342.9e55d8a34323d7dafdac.js:0
+[    1375ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://rahulshettyacademy.com/api/ecom/user/get-cart-count/698ee159cb5921dce07cad68:0
+[    1399ms] [ERROR] ERROR Session Timeout @ https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:0
+[    1460ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://rahulshettyacademy.com/api/ecom/product/get-all-products:0
+[    1461ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://rahulshettyacademy.com/api/ecom/user/get-cart-count/698ee159cb5921dce07cad68:0
+[    1463ms] [ERROR] ERROR Session Timeout @ https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:0
+[    1464ms] [ERROR] ERROR Session Timeout @ https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:0

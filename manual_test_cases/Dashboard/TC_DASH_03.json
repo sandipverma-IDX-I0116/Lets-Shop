@@ -1,0 +1,29 @@
+{
+    "TC_DASH_03": {
+        "test_case_summary": "Verify that user can add a product to the cart",
+        "prerequisites": "1. User should be logged in",
+        "steps": [
+            {
+                "test_step": "1. Navigate to the Dashboard",
+                "expected_result": "Dashboard page should be visible",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "2. Identify a product (e.g., iphone 13 pro)",
+                "expected_result": "Product should be visible",
+                "test_data": {
+                    "value": "iphone 13 pro"
+                }
+            },
+            {
+                "test_step": "3. Click on 'Add To Cart' button for the product",
+                "expected_result": "Toast message 'Product Added To Cart' should be displayed",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}

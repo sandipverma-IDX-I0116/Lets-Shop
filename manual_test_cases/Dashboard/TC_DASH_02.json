@@ -1,0 +1,29 @@
+{
+    "TC_DASH_02": {
+        "test_case_summary": "Verify that user can search for products",
+        "prerequisites": "1. User logged in\n2. Dashboard displayed",
+        "steps": [
+            {
+                "test_step": "1. Locate Search Bar",
+                "expected_result": "Search bar visible",
+                "test_data": {
+                    "value": "none"
+                }
+            },
+            {
+                "test_step": "2. Enter product name (e.g., 'zara')",
+                "expected_result": "Text entered",
+                "test_data": {
+                    "value": "zara"
+                }
+            },
+            {
+                "test_step": "3. Press Enter / Click Search",
+                "expected_result": "Product list should filter to show only products matching 'zara'.",
+                "test_data": {
+                    "value": "none"
+                }
+            }
+        ]
+    }
+}
