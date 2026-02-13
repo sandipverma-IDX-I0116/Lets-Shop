@@ -6,3 +6,14 @@
 [    1461ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://rahulshettyacademy.com/api/ecom/user/get-cart-count/698ee159cb5921dce07cad68:0
 [    1463ms] [ERROR] ERROR Session Timeout @ https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:0
 [    1464ms] [ERROR] ERROR Session Timeout @ https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:0
+[  312640ms] [ERROR] ERROR TypeError: this.registerForm.value.occupation.setValue is not a function
+    at t.changeOcp (https://rahulshettyacademy.com/client/193.d265881eae00ddd5b310.js:1:32925)
+    at https://rahulshettyacademy.com/client/193.d265881eae00ddd5b310.js:1:8447
+    at jp (https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:1:101103)
+    at i (https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:1:101312)
+    at push.9075.st.constructor.eventManager (https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:1:164157)
+    at v.invokeTask (https://rahulshettyacademy.com/client/polyfills.d5e2c55785e9a2a0b452.js:1:7137)
+    at Object.onInvokeTask (https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:1:146258)
+    at v.invokeTask (https://rahulshettyacademy.com/client/polyfills.d5e2c55785e9a2a0b452.js:1:7058)
+    at M.runTask (https://rahulshettyacademy.com/client/polyfills.d5e2c55785e9a2a0b452.js:1:2532)
+    at m.invokeTask [as invoke] (https://rahulshettyacademy.com/client/polyfills.d5e2c55785e9a2a0b452.js:1:8188) @ https://rahulshettyacademy.com/client/main.debaae36313b48de71b3.js:0

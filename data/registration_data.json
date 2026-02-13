@@ -1,0 +1,27 @@
+{
+    "valid": {
+        "firstName": "Test",
+        "lastName": "User",
+        "phone": "1234567890",
+        "occupation": "Engineer",
+        "gender": "Male",
+        "password": "Password@123"
+    },
+    "existingEmail": {
+        "firstName": "Existing",
+        "lastName": "User",
+        "phone": "9876543210",
+        "occupation": "Doctor",
+        "gender": "Female",
+        "password": "Password@123"
+    },
+    "mismatch": {
+        "firstName": "Mismatch",
+        "lastName": "User",
+        "phone": "1122334455",
+        "occupation": "Student",
+        "gender": "Male",
+        "password": "Password@123",
+        "confirmPassword": "Password@999"
+    }
+}
