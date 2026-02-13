@@ -2,14 +2,12 @@ import { Page, Locator, expect } from '@playwright/test';
 
 export class LoginPage {
     readonly page: Page;
-    readonly registerLink: Locator;
     readonly emailInput: Locator;
     readonly passwordInput: Locator;
     readonly loginButton: Locator;
 
     constructor(page: Page) {
         this.page = page;
-        this.registerLink = page.getByText('Register here');
         this.emailInput = page.locator('#userEmail');
         this.passwordInput = page.locator('#userPassword');
         this.loginButton = page.getByRole('button', { name: 'Login' });
@@ -26,7 +24,26 @@ export class LoginPage {
         await this.loginButton.click();
     }
 
-    async goToRegister() {
-        await this.registerLink.click();
+    async verifyLoginError(errorMessage: string) {
+        if (errorMessage.includes('Incorrect')) {
+            await expect(this.page.locator('#toast-container')).toContainText(errorMessage);
+        } else {
+            // Fallback for other errors if any
+            await expect(this.page.locator('#toast-container')).toBeVisible();
+        }
+    }
+
+    async verifyEmptyFieldErrors() {
+        await expect(this.page.getByText('*Email is required')).toBeVisible();
+        await expect(this.page.getByText('*Password is required')).toBeVisible();
+    }
+
+    async verifyDashboard() {
+        await expect(this.page.getByRole('button', { name: 'Sign Out' })).toBeVisible();
+        await expect(this.page.locator('.card-body b').first()).toBeVisible();
+    }
+
+    async signOut() {
+        await this.page.getByRole('button', { name: 'Sign Out' }).click();
     }
 }
